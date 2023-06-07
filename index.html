@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./style.css" /> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script><!--JQuery-->
+    <link  rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Averta Demo PE Cutted Demo:wght@400&display=swap"/>
+    <link  rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Proxima Nova:wght@700&display=swap"/>
+  </head>
+  <body>
+    <div class="progress-container"><!--индикатор прокрутки-->
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+    <div class="btn-up btn-up_hide"></div><!--кнопка наверх-->
+    <div id="tooltip"></div><!--подсказка-->
+    <div class="landing-page-studio">
+      <header class="top-menu" data-scroll-to="topMenu">
+        <a class="a-studio">
+          <b>A+</b>
+          <span class="studio"> Studio</span>
+        </a>
+        <div class="home-parent">
+          <a class="home">Home</a>
+          <a class="what-we-do">What We Do</a>
+          <a class="service">Service</a>
+          <a class="project">Project</a>
+          <a class="blog">Blog</a>
+          <a class="contact">Contact</a>
+        </div>
+      </header>
+      <main class="hero-headline">
+        <img class="dot-ornament-icon" alt="" src="./images/dot-ornament.svg"/>
+        <div class="hero-headline-child"></div>
+        <div class="hero-headline-item"></div>        
+        <div class="container"><!--фото с заголовком-->
+          <img class="image-8-icon" id="power" alt="" src="./images/image-8@2x.png"/>
+          <div class="overlay">
+            Leading digital agency with solid design and development expertise.
+            We build readymade websites, mobile applications, and elaborate
+            online business services.
+            Our Business Plan is a written document describing a company's core
+          business activites, Objectives, and how it plans to achieve its goals.
+          Our goal is to provide our client high quality Product with modern
+          idea accordingly their budgets and according thir reuirements.
+          </div>
+        </div>
+        <div class="content">
+          <div class="a-digital-product">A Digital Product Agency</div>
+          <div class="leading-digital-agency">
+            Leading digital agency with solid design and development expertise.
+            We build readymade websites, mobile applications, and elaborate
+            online business services.
+          </div>
+          <!-- Используем кнопку, чтобы вызвать снэкбар -->
+          <button class="cta-contact-now btn-hover color-1" autofocus  data-tooltip="Нажать" onclick="myFunction()" >
+            <div class="contact-now">Contact Now</div>
+          </button>
+          <!-- Само сообщение "снэкбар" -->
+          <div id="snackbar">Сайт разработал Фурман Никита</div>
+        </div>
+      </main>
+      <div class="our-client">
+        <div class="several-selected-clients">
+          Several selected clients, who already believe in our service.
+        </div>
+        <div class="our-client1">Our Client</div>
+        <a  class="uber-eats-logo"  href="https://www.ubereats.com/"  target="_blank">
+          <img class="group-icon" alt="" src="./images/group.svg" />
+        </a>
+        <a class="airbnb-logo" href="https://www.airbnb.ru/" target="_blank">
+          <img class="vector-icon" alt="" src="./images/vector.svg" />
+        </a>
+        <div class="google-logo">
+          <a class="group" href="https://www.google.by/" target="_blank">
+            <img class="vector-icon1" alt="" src="./images/vector1.svg" />
+            <img class="vector-icon2" alt="" src="./images/vector2.svg" />
+            <img class="vector-icon3" alt="" src="./images/vector3.svg" />
+            <img class="vector-icon4" alt="" src="./images/vector4.svg" />
+            <img class="vector-icon5" alt="" src="./images/vector5.svg" />
+            <img class="vector-icon6" alt="" src="./imges/vector6.svg" />
+          </a>
+        </div>
+        <a class="amazon-logo" href="https://www.amazon.com/" target="_blank">
+          <img class="path8-icon" alt="" src="./images/path8.svg" />
+          <img class="path10-icon" alt="" src="./images/path10.svg" />
+          <img class="path12-icon" alt="" src="./images/path12.svg" />
+          <img class="path14-icon" alt="" src="./images/path14.svg" />
+          <img class="path16-icon" alt="" src="./images/path16.svg" />
+          <img class="path18-icon" alt="" src="./images/path18.svg" />
+          <img class="path28-icon" alt="" src="./images/path28.svg" />
+          <img class="path30-icon" alt="" src="./images/path30.svg" />
+        </a>
+      </div>
+      <section class="how-can-we-help">
+        <div class="how-can-we-help-child"></div>
+        <img class="how-can-we-help-item" alt="" src="./images/group-70.svg" />
+        <div class="how-can-we-help-inner"></div>
+        <div class="rectangle-div"></div>
+        <div class="we-build-readymade-websites-m-parent">
+          <div class="we-build-readymade">
+            We build readymade websites, mobile applications, and elaborate
+            online business services.
+          </div>
+          <div class="how-can-we-help-your-business-wrapper">
+            <div class="how-can-we">How can we help your Business ?</div>
+          </div>
+        </div>
+        <div class="rectangle-parent">
+          <div class="group-child"></div>
+          <div class="group-item"></div>
+          <div class="we-present-you">
+            We present you a proposal and discuss niffty-gritty like
+          </div>
+          <img  class="box-search-1-icon"  alt=""  src="./images/boxsearch-1.svg"/>
+          <div class="business-idea-planning">Business Idea Planning</div>
+        </div>
+        <div class="rectangle-group">
+          <div class="group-child"></div>
+          <div class="group-child1"></div>
+          <div class="we-present-you">
+            Protocols apart from aengage models, pricing billing
+          </div>
+          <img  class="box-search-1-icon"  alt=""  src="./images/emptywallet-1.svg"/>
+          <div class="financial-planning-system">Financial Planning System</div>
+        </div>
+        <div class="rectangle-container">
+          <div class="group-child"></div>
+          <div class="group-child3"></div>
+          <div class="we-present-you">
+            Protocols apart from aengage models, pricing billing
+          </div>
+          <img  class="box-search-1-icon"  alt=""  src="./images/chartsquare-1.svg"/>
+          <div class="market-analysis-project">Market Analysis Project</div>
+        </div>
+        <div class="group-div">
+          <div class="group-child"></div>
+          <div class="group-child5"></div>
+          <div class="we-present-you">
+            Communication protocols apart from engagement models
+          </div>
+          <img class="box-search-1-icon" alt="" src="./images/code1-1.svg" />
+          <div class="development-website-and">Development Website and App</div>
+        </div>
+      </section>
+      <div class="great-since">
+        <div class="great-since-child"></div>
+        <div class="great-since-item"></div>
+        <div class="our-business-plan">
+          Our Business Plan is a written document describing a company's core
+          business activites, Objectives, and how it plans to achieve its goals.
+          Our goal is to provide our client high quality Product with modern
+          idea accordingly their budgets and according thir reuirements.
+        </div>
+        <div class="great-digital-product-agency-s-wrapper">
+          <div class="great-digital-product">
+            Great Digital Product Agency since 2016
+          </div>
+        </div>
+        <img  class="unsplashbzqu01v-g54-icon ramka"  id="myImg"  alt=""  src="./images/unsplashbzqu01vg54@2x.png"/>
+        <!-- картинка в новом окне -->
+        <div id="myModal" class="modal">
+          <span class="close">×</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        <div class="play-rounded-button-1">
+          <div class="play-rounded-button-1-child"></div>
+          <img class="vector-icon" alt="" src="./images/group1.svg" />
+        </div>
+      </div>
+      <div class="happy-client">
+        <img class="dot-icon" alt="" src="./images/dot.svg" />
+        <div class="happy-client-child"></div>
+        <div class="happy-client-item"></div>
+        <div id="gallery"><!--карусель-->
+          <div class="buttons">
+            <button class="pngwing-1 prev" autofocus></button>
+          </div>
+          <div class="photos">
+            <img  class="unsplashmtztgvdshfy-icon ramka"  alt=""  src="./images/unsplashmtztgvdshfy@2x.png"/>
+            <img  class="unsplashmtztgvdshfy-icon ramka"  alt=""  src="./images/фотопнг.png"/>
+            <img  class="unsplashmtztgvdshfy-icon ramka"  alt=""  src="./images/пнгфото2.png"/>
+          </div>
+        </div>
+        <div class="several-selected-clients1">
+          Several selected clients, who already believe in our service.
+        </div>
+        <div class="what-our-happy">What our happy client say</div>
+        <div class="matthew-paul-parent">
+          <div class="matthew-paul">Matthew Paul</div>
+          <div class="perfect-very-good">
+            Perfect, very good job! Thank you for the amazing design and work.
+            Really impressed with the high quality and quick turnaround time.
+            Highly recommend.
+          </div>
+          <div class="ellipse-div"></div>
+          <input class="ellipse-input" type="radio" autofocus />
+          <input class="group-child6" type="radio" autofocus />
+          <input class="group-child7" type="radio" autofocus />
+          <input class="group-child8" type="radio" autofocus />
+        </div>
+        <div class="unsplashmez3pofgs-k-parent">
+          <img  class="unsplashmez3pofgs-k-icon scale"  alt=""  src="./images/unsplashmez3pofgs-k@2x.png"/>
+          <img  class="unsplashohkelokq3re-icon scale"  alt=""  src="./images/unsplashohkelokq3re@2x.png"/>
+          <img  class="unsplash3tll-97hnjo-icon scale"  alt=""  src="./images/unsplash3tll-97hnjo@2x.png"/>
+          <img  class="unsplashw7b3edub-2i-icon scale"  alt=""  src="./images/unsplashw7b3edub-2i@2x.png"/>
+          <img  class="unsplashet-78qkmmqs-icon scale"  alt=""  src="./images/unsplashet-78qkmmqs@2x.png"/>
+          <img  class="unsplash6anudmpilw4-icon scale"  alt=""  src="./images/unsplash6anudmpilw4@2x.png"/>
+          <img  class="unsplashd1upkifd04a-icon scale"  alt=""  src="./images/unsplashd1upkifd04a@2x.png"/>
+          <img  class="unsplasho3ymvt7wf9u-icon scale"  alt=""  src="./images/unsplasho3ymvt7wf9u@2x.png"/>
+        </div>
+      </div>
+      <div class="newsletter">
+        <img class="newsletter-child" alt="" src="./images/group-73.svg" />
+        <div class="newsletter-item"></div>
+        <div class="newsletter-inner"></div>
+        <img class="rectangle-icon" alt="" src="./images/rectangle-31.svg" />
+        <div class="rectangle-parent1">
+          <form> 
+            <input  class="rectangle-input" id="email" name="email"  type="email"  maxlength="{100}"  minlength="{1}"  autofocus/>
+            <div class="enter-your-email">Enter your email address..</div>
+            <button class="contact-now-wrapper" autofocus type="submit" value="Submit" onclick="validateEmail()">
+              <div class="contact-now1">Contact Now</div>
+            </button>     
+          </form>
+        </div>
+        <div class="i-will-update">
+          I will update good news and promotion service not spam
+        </div>
+        <div class="subscribe-newsletter">Subscribe Newsletter</div>
+      </div>
+      <footer class="footer">
+        <a class="a-studio1" id="aStudio1">
+          <b>A+</b>
+          <span class="studio"> Studio</span>
+        </a>
+        <div class="what-we-do1">What We Do</div>
+        <div class="company">Company</div>
+        <div class="support">Support</div>
+        <div class="contact1">Contact</div>
+        <a class="web-design-app-container">
+          <p class="web-design">Web Design</p>
+          <p class="web-design">App Design</p>
+          <p class="web-design">Social Media Manage</p>
+          <p class="web-design">Market Analysis Project</p>
+        </a>
+        <a class="about-us-career-container">
+          <p class="web-design">About Us</p>
+          <p class="web-design">Career</p>
+          <p class="web-design">Become Investor</p>
+        </a>
+        <a class="faq-policy-business-container">
+          <p class="web-design">FAQ</p>
+          <p class="web-design">Policy</p>
+          <p class="web-design">Business</p>
+        </a>
+        <a class="whatsapp-support-24-container">
+          <p class="web-design">WhatsApp</p>
+          <p class="web-design">Support 24</p>
+        </a>
+        <div class="footer-child"></div>
+        <div class="footer-item"></div>
+        <div class="leading-digital-agency1">
+          Leading digital agency with solid design and development expertise. We
+          build readymade websites, mobile applications, and elaborate online
+          business services.
+        </div>
+        <a class="facebook" href="https://ru-ru.facebook.com/" target="_blank">
+          <img class="vector-icon" alt="" src="./images/group2.svg" />
+        </a>
+        <a class="twitter" href="https://twitter.com/" target="_blank">
+          <img class="vector-icon" alt="" src="./images/group3.svg" />
+        </a>
+        <div class="linkedin">
+          <a class="group1">
+            <img class="vector-icon" alt="" src="./images/vector7.svg" />
+            <img class="group-icon4" alt="" src="./images/group4.svg" />
+          </a>
+        </div>
+        <div class="footer-inner"></div>
+        <div class="copyright-2022">Copyright © 2022 Avi Yansah</div>
+      </footer>
+      <img id="train" class="pngwing-2-icon" alt="" src="./images/pngwing 2.png" />
+    </div>
+      <script src="./script.js"></script>
+  </body>
+</html>
